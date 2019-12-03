@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}
+Some Model Inference Over Picture
+{% endblock %}
+
+{% block content %}
+
+<section class="center">
+    <h2 class="title">Very Model</h2>
+
+    <label for="upload" class="dropzone">
+        <span class="dropzone__title">
+            Click for choose file<br/>
+            or drag&drop image here
+        </span>
+
+        <input type="file" id="upload" class="dropzone__input"/>
+    </label>
+    <br/>
+
+    <div>
+        <img id=original src="" alt="">
+    </div>
+
+    <div>
+        <img id=processed src="" alt="">
+    </div>
+</section>
+
+<script src="static/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="static/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="static/js/vendor/progressbar.min.js"></script>
+
+<script src="static/js/main.js"></script>
+{% endblock %}
